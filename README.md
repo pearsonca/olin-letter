@@ -1,6 +1,6 @@
 ##Re Me
 
-I am currently a post-doctoral researcher, dabbling in several fields (social science modeling, infectious disease ecology, software engineering) that have nothing to do with my doctoral work (physics, specifically theoretical statistical mechanics).  I've churned out several talks and posters, and am now settling into turning those in publications, most of which also include a software component for other researchers to use.
+I am currently a post-doctoral researcher, dabbling in several fields (social science modeling, infectious disease ecology, and software engineering).  These projects don't have much problem overlap with my doctoral work (physics, specifically [theoretical statistical mechanics](http://goo.gl/AYgXwH "Woohoo, still no citations!"), but I'm getting a lot mileage out of the physics toolbox (and engineering one from work before graduate school).  I've churned out several talks and posters, and am now settling into turning those in publications, most of which also include a software component for other researchers to use.
 
 I am also a Navy Reservist working for the Office of Naval Research, with a mixed tasking as the software architect (and developer, and tester, etc) for our [program management software](https://edison.nrl.navy.mil), the coordinator and lead instructor for a [software engineering course in Ghana](pearsonca.github.io/stdio-ghana), and the Executive Officer for the crew that supports a [fire-fighting test platform](http://www.nrl.navy.mil/field-sites/ex-uss-shadwell/).
 
