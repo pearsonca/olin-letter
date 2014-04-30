@@ -10,7 +10,7 @@ I also had a very formative practical engineering experience as the technical su
 
 ##Olin + Me = ?
 
-When I first read about Olin (my senior year in undergraduate), I distinctly remember thinking "well, I just wasted the past three years at the wrong school."  Each subsequent time I've seen Olin in the news, it just reinforces my wish that I had that kind of experience.  I did manage to get plenty of expertly coached, applied practice during undergraduate, but that almost entirely outside the planned and expected classroom experience.  I read about Olin's emphasis on doing -- with the theory of doing to support practice, not as an ends in itself -- and I just breathe a sigh of relief that at least *someone* gets it.
+When I first read about Olin (my senior year in undergraduate), I distinctly remember thinking "well, I just wasted the past three years at the wrong school."  Each subsequent time I've seen Olin in the news, it just reinforces my wish that I had that kind of experience: an emphasis on doing -- with the theory of doing to support practice, not as an ends in itself.  I did manage to get plenty of expertly coached, applied practice during undergraduate, but that was almost entirely outside the planned and expected classroom experience.
 
 I'd love to come to Olin as a student *still*, but I do feel prepared to work there as faculty (of course, I hope that there's as much opportunity to learn in a faculty position).  My traditional engineering technical skills (e.g., what's the necessary thread spacing for this fastener? what are the flow characteristics coming off this nozzle?) are probably a bit rusty to be leading students on those topics any time soon.  However, I have been working pretty much continuously on integrating engineering and scientific concerns across disciplines for the past decade, and I am becoming quite sharp on the question of how to make a detailed, applied ecological model.
 
@@ -33,7 +33,7 @@ That's what I'm passionate about in education: getting students that accomplish 
 ##Questions
 
 My main questions are
- - I know my cv looks light from a traditional university perspective; I'm hoping that Olin is looking for something else, however, and that I what I do have to offer matches that other thing.  So, are you? Does it?
- - is the kind of work I'd engage in -- systems modeling towards addressing something like the [OneHealth](http://www.cdc.gov/onehealth/) buzz challenges, but with a lens that also tends to encompass agricultural issues and deal with operational concerns -- the right match for Olin?  It's not work I ever heard advertised in an engineering context, and briefly bouncing around your public materials I don't see much that looks like it, but the problems do seem to need every skillset I've seen working as an engineer.
+ - I know my cv looks light from a traditional university perspective.  Olin is not a traditional university, however, and I think the other experiences I would bring are valuable to the environment you are creating.  Still, I could be misreading; so: is it worth our mutual time investment for me to put together a more formal package and for you to review it?
+ - The kind of work I want to engage in (and am currently looking for funding in) is not Mech, Comp, or Elec engineering.  It's closest perhaps to environmental engineering, but for non-traditional products (something like the [OneHealth](http://www.cdc.gov/onehealth/) perspective).  Will it blend with work other people at Olin are doing?  Is it something your students would engage with?
 
 ##Look Forward to Hearing From You - CABP
