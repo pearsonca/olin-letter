@@ -1,4 +1,4 @@
-##Re Me
+## Re Me
 
 I am a post-doctoral researcher, dabbling in several fields (social science modeling, infectious disease ecology, and software engineering).  These projects are far afield from my doctoral work (physics, specifically [theoretical statistical mechanics](http://goo.gl/AYgXwH "Woohoo, still no citations!")), but I'm getting great mileage out of the physics toolbox (and the engineering one from work before graduate school).  I've done several talks and posters with various collaborators, and am now turning those into publications, most of which will include a software component for other researchers to use.
 
@@ -8,7 +8,7 @@ Prior to getting my doctorate, I worked at [Naval Reactors Headquarters](http://
 
 I also had a very formative practical engineering experience as the technical supervisor for a [student-run theater company](http://www.hoofnhorn.org/index.html "The new website is waaaay better than what we had, but all the shows I did seem to have fallen into the wayback machine.") and the technical director for several shows.  Lots of experience in drafting, statics, safety compliance, and budgetting.  Plenty of hands-on work, too (carpentry, welding, wiring, et cetera).
 
-##Olin + Me = ?
+## Olin + Me = ?
 
 When I first read about Olin (my senior year in undergraduate), I distinctly remember thinking "well, I just wasted the past three years at the [wrong school](http://www.duke.edu "I do still appreciate jokes about Harvard, the Duke of the North.")."  Each subsequent time I've seen Olin in the news, my updated experience just reinforces that thought: university should be a place to get theory as a backdrop to better application, not theory as an ends in itself.  I got plenty of expertly coached, applied practice during my actual undergraduate years, but that was almost entirely outside the expected classroom experience.  Making that happen was its own valuable lesson, but since most of, say, differential geometry, has been overwritten, I suspect a lot of that time could have been better spent.
 
@@ -18,13 +18,13 @@ Recently in that vein, I've gotten quite sharp at making detailed, applied ecolo
 
 So, I see myself at Olin as working with students to invent new ways to live in the *very* complicated ecological machinery.  Not quite the same as designing new devices, but certainly complementary and as valuable.
 
-##Education, Training, and Building a Team with Both
+## Education, Training, and Building a Team with Both
 
 I think the current university paradigm misses out (generally, not just in engineering and science education) on getting work done.  Certainly, there are problem sets aplenty, and the theory of how to get work done or what work is are covered just fine.  But getting something done means knowing just how many threads that fastener does need.  And what material to make it from, and how to install it, and who is going to be installing it, and -- this being a surprise to many people -- actually turning the wrench.  The technical training programs I'm familiar with have the opposite problem; they've got too narrow a focus on work, to the extent that the laser focus on, say, hammers makes people forget that there are also screw drivers (and welded joints, etc).  This is a symptom of limited perspective on how a particular task fits into the whole product.
 
 Of course, the notion that any one person could master all those things is just silly.  That means what we need are teams, comprising members that have a better balance of education and training.
 
-To be an effective team member, you have to know enough about what other people are doing to genuinely appreciate their work, and to be able to be heathily skeptical, to demand better.   I'd call that quality Education -- it's not being the best candidate to do something, but it's knowing enough to be able to work with someone that is.  I do think people have to get their hands dirty to get actual insight, however, and it's not my experience that traditional universities do very well on that count -- too much focus on something that's easy to grade, not enough on a product worth grading.
+To be an effective team member, you have to know enough about what other people are doing to genuinely appreciate their work, and to be able to be healthily skeptical, to demand better.   I'd call that quality Education -- it's not being the best candidate to do something, but it's knowing enough to be able to work with someone that is.  I do think people have to get their hands dirty to get actual insight, however, and it's not my experience that traditional universities do very well on that count -- too much focus on something that's easy to grade, not enough on a product worth grading.
 
 Effective team members are also *really* good at their part of the solution.  That's Training -- really digging into the details and surviving the mess that inevitably results.  Certainly, the big picture is important to frame that work, but often times getting results is about throwing out the general rules that aren't good enough for this particular context.  I've seen maybe a half dozen classes with that kind of focus.  On the flipside, the Navy did great training on details, but often completely divorced them from the big picture.
 
