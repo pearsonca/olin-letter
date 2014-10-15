@@ -14,7 +14,7 @@ possible at Olin and in the world.
 
 ## Response
 
- - excited about focus on getting students doing things
+ - excited about focus on getting "students" doing things
  - not sure how much Olin is doing this, but interested in getting away from
  one-set-of-ideas, one-class, one-semester mode.  Probably means developing more
  modular reference / training material, figuring out to evaluate full range of
