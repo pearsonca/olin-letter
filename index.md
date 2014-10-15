@@ -3,7 +3,7 @@ title: Cover Letter
 layout: page
 ---
 
-## Prompt
+## Prompt: An Olin-specific cover letter
 
 Tell us why you’re excited to join us as we work with students to help them
 grow, create new types of educational experiences, and change engineering

@@ -3,7 +3,7 @@ title: Student Development
 layout: page
 ---
 
-## Prompt
+## Prompt: A description of your philosophy of student learning and development
 
 One way we measure faculty success is by how our activities and accomplishments
 contribute to student development. This doesn’t just happen in the classroom,
