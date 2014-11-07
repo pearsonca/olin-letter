@@ -70,3 +70,11 @@ Julie notes:
  artifact
  - add concrete practical experience: probably from structure of STDIO course,
  with course emphasis on having project, then sessions on how to attack the problem
+
+pulled from cover:
+
+Not suggesting abandoning all traditional teaching activities, but I think there's a lot
+to be done breaking out one-set-of-ideas, one-class, one-semester mode.  Probably means developing more
+ modular reference / training material, figuring out to evaluate full range of
+ skills - measured by ability to complete a project that demands them? how to do
+ team evaluation
