@@ -12,6 +12,16 @@ research. How might we change the world?
 
 ## Response
 
+Education products:
+
+ - putting together short, interactive tutorials for programming, modeling
+
+Project ideas:
+
+ - disease modeling tools
+ - enhancing open source tools (pomp, plom)
+ - partnerships in Africa, SE Asia for data gathering
+
 I explained that my ideal version of a class produces actual product.  The work would have to be carefully
 curated for its potential training value, and it is probably more slowly completed than it would
 be by experts, but that work would create actual, (potentially) useful results nonetheless.

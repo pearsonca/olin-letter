@@ -101,3 +101,14 @@ are terrific opportunities to improve and enrich lives.
 
 I hope I get the chance to bring the enthusiasm of place like Olin to bear on such
 problems.
+
+
+Juliet Notes:
+
+ - first few paras, confusing grammatical structure, word choice.  order in 1st para
+ too dense
+ - try be positive about Olin without being down on traditional universities
+ - pun confusing
+ - classroom / class-like structure - don't say classes are the worst, posit not
+ having classes, what would be gained from having no semester schedule / credits
+ - maybe move some of those things to student development / impact statement
