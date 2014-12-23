@@ -37,9 +37,9 @@ better (worse) than the military.  Too often, these objectives are bandied about
 without ever attempting to convince people why the material matters - which is
 also basically what happens in many undergraduate degrees with highly structured
 requirements.  It's a game masquerading a recipe of the things one needs to
-know, and too often provide a false sense of accomplishment as students tick
+know, and too often provides a false sense of accomplishment as students tick
 them off the list.  Walking through the checklist also wears down the experts;
-we're frequently the sort of people that are looking for the next new thing, and
+they're frequently the sort of people that are looking for the next new thing, and
 asking those people to rehash material over and over isn't going to excite
 *them*.  Effectively guiding students has a strong performance art component, and
 they can tell when we're phoning it in.
