@@ -1,5 +1,5 @@
-absoluteurl: http://olin-app.madeforuse.org
-baseurl: ''
+absoluteurl: http://madeforuse.org
+baseurl: 'olin-letter'
 markdown: kramdown
 encoding: utf-8
 activeClass: class="active"
