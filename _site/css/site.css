@@ -1,0 +1,38 @@
+.top_nav {
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+  font-size: 1.5em;
+  position: fixed;
+  top: 1px;
+  list-style-type: none; }
+  .top_nav li {
+    margin: 0em;
+    color: black;
+    border-radius: 5px; }
+    .top_nav li:hover {
+      background-color: gray; }
+    .top_nav li.active {
+      color: white;
+      background-color: black; }
+    .top_nav li a {
+      text-decoration: none;
+      color: inherit;
+      padding: 0.5em;
+      display: block; }
+
+.main, .footer {
+  max-width: 40em;
+  margin-left: 13em;
+  color: black;
+  background-color: white;
+  font-size: 110%;
+  text-align: justify; }
+  .main a, .footer a {
+    color: inherit; }
+    .main a:hover, .footer a:hover {
+      background-color: grey; }
+
+.footer {
+  text-align: center;
+  font-style: italic; }

@@ -1,0 +1,11 @@
+absoluteurl: http://olin-app.madeforuse.org
+baseurl: ''
+markdown: kramdown
+encoding: utf-8
+activeClass: class="active"
+navPages:
+ - students
+ - impacts
+exclude:
+ - run.sh
+ - README.md

@@ -1,0 +1,14 @@
+<ul class="top_nav">
+  <li id="home_page" {% if page.url == "/index.html" %}{{ site.activeClass }}{% endif %}>
+   <a href="{{ site.absoluteurl }}{{ site.baseurl }}/">Cover Letter</a>
+  </li>
+  <li id="students_page" {% if page.url contains "students" %}{{ site.activeClass }}{% endif %}>
+   <a href="{{ site.absoluteurl }}{{ site.baseurl }}/students.html">Students</a>
+  </li>
+  <li id="impacts_page" {% if page.url contains "impacts" %}{{ site.activeClass }}{% endif %}>
+   <a href="{{ site.absoluteurl }}{{ site.baseurl }}/impacts.html">Impacts</a>
+  </li>
+  <li id="cv_download">
+   <a href="{{ site.absoluteurl }}{{ site.baseurl }}/cabp_cv.pdf">CV</a>
+  </li>
+</ul>

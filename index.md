@@ -15,14 +15,14 @@ Olin's emphasis on *doing* as a means -- rather than ends -- to education, upend
 the conventional approach.  I think it's prescient as well: when peak credentialism hits,
 the vellum won't be what matters, it will be what people have actually done.
 
-Unlike, say, Peter Thiel, however, I don't think dispensing with the university
+Unlike, say, [Peter Thiel](http://www.thielfellowship.org/), however, I don't think dispensing with the university
 environment is the answer.  I am sympathetic to problems with mainstream
 approaches, but Olin's academic statement is, to me, about remembering what
 established undergraduate programs seem to have lost: the university is about
 creating -- not just transferring -- knowledge, via novices working with experts.
 A traditional lecture-style class, no matter how effective, is only there to
 send facts and evaluate their receipt.  That format will soon be mostly
-displaced (and good riddance) by services like Coursera.
+displaced (and good riddance) by services like [Coursera](https://www.coursera.org).
 
 We can take as given that the facts and procedures typical of an undergraduate technical program are
 floating around the www waiting to be absorbed, and that our role can be limited
@@ -40,15 +40,14 @@ focusing on those approaches, and the problems are incidental.
 
 It's rut-inducing.
 
-But the new normal of MOOCs, Wikipedia, StackExchange sites, streaming
-Mythbusters, *etc.* is an opportunity for *us*: we can use our expertise to
+But the new normal of MOOCs, [Wikipedia](https://en.wikipedia.org/wiki/Main_Page), [StackExchange sites](http://stackexchange.com/sites), [streaming Mythbusters](http://www.discovery.com/tv-shows/mythbusters/), *etc.* is an opportunity for *us*: we can use our expertise to
 *inquire* in the classroom, and shift focus to good problems.  The novices,
 without being told what to do, will rehash and remix old solutions into new
 places, and no doubt occasionally make *really* crazy connections.
 
 This will let us all break out of those local optima.  What's also great about this approach
 is that it unifies what it means to be a great teacher and to advance the
-field: we don't have to choose or be superhuman to have both.
+field.  Faculty no longer have to choose teaching versus research, they can have both.
 
 I hope Olin is already thinking this way, and I hope to help you push further in
 this direction.  Particularly, I want to explore domains that are not traditionally
@@ -57,15 +56,14 @@ fertile grounds, but also to confront future engineers with enough mess to get t
 their comfort zone.
 
 My recent work has been transitioning from physical sciences and engineering to
-natural and social sciences.  I've been particularly focusing on infectious
-disease ecology, which roughly encompasses problems concerning how
+natural and social sciences.  I've been particularly focusing on [infectious disease ecology](http://www.nsf.gov/news/special_reports/ecoinf/inf.jsp), which roughly encompasses problems concerning how
 environmental, human, and domestic and wild animal factors conspire to circulate
 pathogens.  These systems have surprising interactions -- *e.g.* how mosquitos
 detect and respond to smell can be modulated by infections! -- demanding care in
 both modeling and experimental work.  But these are more than just fascinating
 problems: the chance to improve the human condition is palpable.  Think about
-the Ebola coverage, and how horrifying it is - yet that doesn't even begin to
-scratch the surface of malaria, dengue, chikungunya, and what they inflict on
+the [Ebola coverage](https://www.google.com/search?q=ebola&oq=ebola#safe=off&q=ebola+news), and how horrifying it is - yet that doesn't even begin to
+scratch the surface of [Malaria](http://www.who.int/gho/malaria/epidemic/deaths/en/), [Dengue](http://www.who.int/mediacentre/factsheets/fs117/en/), [Chikungunya](http://www.who.int/mediacentre/factsheets/fs327/en/), and what they inflict on
 already hard-pressed people.  Fighting any of these diseases would be a terrific opportunity
 to improve and enrich lives.
 

@@ -58,7 +58,7 @@ year, we had the students incubate ideas.  This past year, we worked with a
 hospital to understand their logistics (patient intake, scheduling, dispensary,
 *etc.*) and used that to inspire student projects.  Unfortunately, we could not
 close the loop with hospital representatives given the workshop timeline.
-However, this coming year, our partnering with AIMS Ghana will identify projects
+However, this coming year, our partnering with [AIMS Ghana](http://www.aims.edu.gh/) will identify projects
 far in advance of the workshop and involve the researchers in both setting goals
 for the workshop process as well as evaluating its results.  While I think
 there's still room to more closely integrate research with practical outcomes,
@@ -73,7 +73,7 @@ many cases, the outputs of other disciplines that we could have "off-the-shelf"
 are not available in developing contexts, so we have to work with experts in
 those domains to figure out the alternatives.  Something as simple as assuming
 that "if a particular commodity bolt wears out, a replacement can be obtained"
-doesn't work when getting to the nearest Home Depot involves airplanes.  Any work there,
+doesn't work when getting to the [nearest Home Depot involves airplanes](https://goo.gl/maps/TKbQV).  Any work there,
 especially the public health work that interests me, is going to need a union of
 many skillsets.
 

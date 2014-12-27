@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ page.title }} - Carl Pearson, Olin Faculty Application</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  {% include header.liquid %}
+  <div class="main">
+  {{ content | markdownify }}
+  </div>
+  <div class="footer">
+    <p><a href="mailto:cap10@ufl.edu">Carl A. B. Pearson</a></p>
+    <p>This site was developed in <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+    <p>The source is available at <a href="https://github.com/pearsonca/olin-letter/">github.com/pearsonca/olin-letter/</a>.</p>
+  </div>
+</body>
+</html>
