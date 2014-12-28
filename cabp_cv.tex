@@ -1,0 +1,466 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}
+    {\minipage[t]{\linewidth}\list{}{%
+        \setlength{\leftmargin}{\bibhang}%
+        \setlength{\itemindent}{-\leftmargin}%
+        \setlength{\itemsep}{\bibsep}%
+        \setlength{\parsep}{\z@}%
+        }}
+    {\endlist\endminipage}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=0.75in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+
+\begin{document}
+\makeheading{LCDR Carl A.~Pearson, Ph.D.}
+
+\section{Contact Information}
+\newlength{\rcollength}\setlength{\rcollength}{1.95in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\href{http://www.epi.ufl.edu/}%
+     {Emerging Pathogens Institute} & \\
+\href{http://www.ufl.edu/}{University of Florida}
+                           & \textit{Cell:} (202) 360-9460 \\
+P.O. Box 100009            & \textit{Fax:} (352) 273-6890 \\
+2055 Mowry Road           & \href{mailto:cap10@ufl.edu}{cap10@ufl.edu}\\
+Gainesville, FL 32610    & \\ %\href{http://sites.google.com/site/cabpearson/}{sites.google.com/site/cabpearson/}\\
+\end{tabular}
+
+%\section{Security Clearance}
+%
+%Department of Defense Top Secret SCI with polygraph (expired: 2002)
+
+%\section{Citizenship}
+%
+%USA
+
+\section{Research Interests}
+%
+Analytical and computational modeling of dynamic systems, and development of software pipelines to improve and promote more widespread use of these models
+
+\section{Education}
+%
+\href{http://www.gwu.edu/}{\textbf{The George Washington University}},
+Washington, DC
+\begin{outerlist}
+
+\item[] Ph.D.,
+        \href{http://www.phys.gwu.edu/}
+             {Physics}
+             (Jan 2012); M.Phil., Physics (May 2010)
+        \begin{innerlist}
+        \item Thesis Topic: \emph{Complex System Ensemble Analysis}
+        \item Advisers: Professors
+              \href{http://home.gwu.edu/~chenz/}
+                   {Chen Zeng} (Physics), 
+              \href{http://www.seas.gwu.edu/~simha/}
+                   {Rahul Simha} (Computer Science)
+        \end{innerlist}
+        
+
+\end{outerlist}
+
+\blankline
+
+\href{http://www.nps.edu/}{\textbf{The Naval Post-Graduate School}},
+Monterey, CA
+\begin{outerlist}
+
+\item[] M.S.E.S,
+        \href{http://www.nps.edu/Academics/GSEAS/MAE/}
+             {Mechanical Engineering}
+             (Apr 2006)
+        \begin{innerlist}
+        \item Thesis Topic: \emph{Nuclear Submarine Reactor and Engineering Spaces Design Study}
+        \item Specialization: Thermal Hydraulics
+        \item Adviser: Dr. G. Hay, \href{http://www.bettislab.com/}{Bettis Atomic Power Laboratory}
+        \end{innerlist}
+\end{outerlist}
+
+\blankline
+
+\href{http://www.duke.edu/}{\textbf{Duke University}},
+Durham, NC
+\begin{outerlist}
+
+\item[] B.S.
+        \href{http://www.math.duke.edu/}{Mathematics},
+        \href{http://www.phy.duke.edu/}{Physics},
+        \href{http://philosophy.duke.edu/}{Philosophy (minor)} (May 2003)
+
+        \begin{innerlist}
+        \item Physics Independent Study Topic: \emph{Pyroelectric Effect}
+        \item Adviser: \href{http://fds.duke.edu/db/aas/Physics/faculty/guenther}
+                   {Professor Bob Guenther}
+        \item Mathematics Independent Study Topic: \emph{Genetic Algorithm Optimization}
+        \item Adviser: \href{http://fds.duke.edu/db/aas/Physics/faculty/rgb}
+                   {Professor Robert Brown}
+        \end{innerlist}
+\end{outerlist}
+
+\section{Professional Experience}
+\href{http://www.epi.ufl.edu}{\textbf{University of Florida, Emerging Pathogens Institute}},
+Gainesville, FL USA
+\begin{innerlist}
+\item[] \textit{Postdoctoral Researcher} \hfill \textbf{since Jan 2012}
+\item[] Supervisor: \href{mailto:bhsinger@ufl.edu}{Burt Singer}
+\end{innerlist}
+
+\href{http://www.onr.navy.mil/en/Science-Technology/Naval-Reservists-p38.aspx}{\textbf{Office of Naval Research Reserve Component}}, Arlington, VA USA
+\begin{innerlist}
+\item[] \textit{Executive Officer}, ex-USS SHADWELL, NRL S\&T 117%
+        \hfill \textbf{Aug 2011-Nov 2014}
+\item[] \textit{Deputy Chief Information Officer}%
+        \hfill \textbf{since Jul 2009}
+\begin{innerlist}
+\item Software Architect and Developer: \href{https://edison.nrl.navy.mil/}{\textbf{Edison}}
+\end{innerlist}
+\item[] \textit{Project Lead, \href{http://stdio-ghana.github.io}{STDIO Ghana Course}}%
+        \hfill  \textbf{Oct 2012-present}
+\item[] \textit{Project Coordinator, Automated Imaging Maritime Threat Analysis}%
+        \hfill  \textbf{2010}
+\item[] Commanding Officers: \href{mailto:PETER.M.GAMERDINGER@saic.com}{CAPT Peter Gamerdinger, USN}; \href{mailto:diane.boettcher1@navy.mil}{CAPT Diane Boettcher, USN}; \href{mailto:daniel.m.mirelez@navy.mil}{CDR Dan Mirelez, USN}; \href{mailto:alex.l.jones@navy.mil}{LCDR Alex Jones, USN}
+\end{innerlist}
+
+\href{http://nnsa.energy.gov/ourmission/poweringnavy\#hq}{\textbf{Naval Reactors}}, Washington, DC USA
+\begin{innerlist}
+
+\item[] \textit{Engineer, Reactor Systems Division}%
+        \hfill \textbf{Mar 2004 to Sep 2008}
+\begin{innerlist}
+\item Reactor Lead: Next-Gen Aircraft Carrier, Attack Submarine Retro-fit, Next-Gen Ballistic Missile Submarine, Experimental and Training Prototype Platform
+\item Supervisors: Group: \href{mailto:farberre@comcast.net}{Robert E. Farber, S.E.S (retired)}; \\Division: \href{mailto:skauffman@mpr.com}{Storm Kauffman, S.E.S (retired)}
+\end{innerlist}
+
+\item[] \textit{Engineer, Submarine Fluid Systems Division}%
+        \hfill \textbf{Jul 2003 to Mar 2004}
+\begin{innerlist}
+\item Fluid Systems Lead, Prototype Reactor and Site Off-Hull Equipment
+\item Supervisors: Group: Tom Boughner, S.E.S (retired); Gordon Baum (retired); \\ Division: CAPT Vic Mortenson, USN(r)
+\end{innerlist}
+\end{innerlist}
+
+\section{Awards}
+\href{http://www.navy.mil/}{United States Navy}
+\begin{innerlist}
+\item Navy-Marine Corps Commendation Medal, 2012, second citation Oct 2014
+\item \href{https://www.nrotc.navy.mil/}{Reserve Officer Training Corps Scholarship}, 1999-2003
+\end{innerlist}
+
+\href{http://www.gwu.edu}{The George Washington University}
+\begin{innerlist}
+\item Chair's Prize for Graduate Research, 2012
+\item \href{http://www.gwu.edu/~bulletin/grad/fnad.html}{Andrew John Knox Fellowship}, 2009-2011
+\end{innerlist}
+
+\href{http://www.math.duke.edu/}{Duke Mathematics Department}
+\begin{innerlist}
+\item Undergraduate Research Fellowship, 2001
+\end{innerlist}
+
+\href{http://www.duke.edu}{Duke University}
+\begin{innerlist}
+\item Dean's List, 1999
+\end{innerlist}
+
+\section{Grants} NSF/DEB Funding
+\begin{innerlist}
+\item RAPID: Understanding and leveraging asymptomatic Infections to control Ebola.  Recommended for funding, award of \$188,509 over 1 year pending. PI: J.R.C.\ Pulliam. Role: named postdoctoral researcher.
+\end{innerlist}
+
+\section{Publications} \begin{bibsection}
+\item Heesterbeek, JAP, RM~Anderson, C~Dye, K~Eames, JC~Edmunds, S~Funk, DT~Hollingsworth, TA~House, V~Isham, J~Lessler, JO~Lloyd-Smith, CJE~Metcalf, L~Pellis, JRC~Pulliam, MG~Roberts, C~Viboud, and the Isaac Newton Institute Infectious Disease Dynamics Group ({\bf CAB~Pearson}). (Accepted) Modeling infectious disease dynamics in the complex landscape of global health. {\em Science}.
+   \item {\bf CAB Pearson}, E Airoldi, and BH Singer.  ``Challenges to Understanding Covert Groups.''  {\em Illuminating Dark Networks: The Study of Clandestine Groups and Organizations}.  Ed. Luke~Gerdes.
+Cambridge: Structural Analysis in the Social Sciences Series, Cambridge University Press, {\em in press}.
+    \item {\bf CAB Pearson}, R Simha, C Zeng.  Network Class Superposition Analysis.\\
+\href{http://www.plosone.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pone.0059046}{\emph{PLoS One}}, 2013.
+    \item G. Wang, C. Zeng, R. Wong, R. Simha, H. Chen, {\bf C. Pearson}, and C. Du. Process-driven inference of biological network structure: feasibility, minimality, and multiplicity.\\
+	 \href{http://www.plosone.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pone.0040330}{\emph{PLoS One}}, 2012.
+\end{bibsection}
+
+\section{Presentations \&{} Posters} \begin{bibsection}
+\item JRC Pulliam and {\bf CAB Pearson}. Improving vector-based surveillance for mosquito-borne infections. {\em Ecological Society of America}. Sacramento, CA.  2014.
+\item {\bf CAB Pearson}, BH Singer, and D Bright. Simulating Meth Production Networks\\
+\emph{Sunbelt XXXIV}, St. Pete's Beach, FL.  2014.
+\item RK Borchering, {\bf CAB Pearson}, AT Gilbert, JD Blanton, RM Wallace, and JRC Pulliam.
+Assessing seasonal drivers of rabies dynamics in three North American carnivore species
+\emph{Epidemics 4}, Amsterdam, NL.  2013.
+\item {\bf CAB Pearson}, TJ Hladish. Epidemics on Dynamic, Empirical Networks\\
+\emph{Epidemics 4}, Amsterdam, NL.  2013.
+\item {\bf CAB Pearson}. Managing Your Physicist\\
+\emph{Minerva Dark Networks Workshop}, West Point, NY.  2013.
+\item {\bf CAB Pearson}, BH Singer, E Airoldi, and E Kao. Detection of Small Covert Networks Embedded in Large Networks\\
+\emph{Sunbelt XXXIII}, Hamburg, DE.  2013.
+\item JRC Pulliam, {\bf CAB Pearson}, JM Rowland, JS Lord, and BH Singer.
+Japanese encephalitis virus in Japan: insights from dynamic models\\
+\emph{EPI Research Day}, Gainesville, FL.  2013.
+\end{bibsection}
+\newpage
+\section{Teaching Experience}\href{http://www.aims.edu.gh/}{\textbf{African Institute for Mathematical Sciences (AIMS) Ghana}}
+\begin{outerlist}
+
+\item[] \textit{\href{http://aims-ghana.github.io/python-course/}{Introduction to Scientific Computing with Python}}%
+    \hfill \textbf{Sep 2014}
+    \begin{innerlist}
+            \item Developing syllabus and challenge material for Python
+            \item On-going discussion with students
+            \item Evaluating student performance, overseeing teaching assistant grading
+            \item AIMS Ghana Academic Director: \href{mailto:prince@aims.edu.gh }{Prince Osei}
+    \end{innerlist}
+\end{outerlist}~
+
+
+\href{http://www.onr.navy.mil/Science-technology/onr-global.aspx}{\textbf{Office of Naval Research, Global Division}}
+\begin{outerlist}
+
+\item[] \textit{\href{http://stdio-ghana.github.io/}{STDIO Ghana Course}}%
+    \hfill \textbf{Oct 2012 to present}
+    \begin{innerlist}
+        \item Project Lead, Instructor for summer courses in 2013, 2014
+        \begin{innerlist}
+            \item Running on-going prep for two week intensive course on software development at University of Ghana
+            \item Responsible for course material on several software engineering and language topics
+            \item Project Sponsor: \href{mailto:vogela@onr.navy.mil }{Augustus Vogel} (Santiago, Chile Office)
+        \end{innerlist}
+    \end{innerlist}
+\end{outerlist}~
+
+\href{http://www.gwu.edu}{\textbf{The George Washington University}},
+Washington, DC USA
+\begin{outerlist}
+
+\item[] \textit{Teaching Assistant}%
+    \hfill \textbf{Sep 2008 to May 2009}
+    \begin{innerlist}
+    \item Instructor for PHY-21: \href{http://www.ncsu.edu/PER/scaleup.html}{SCALE-UP} Biologically-inspired Classical Mechanics, Spring Semester 2009
+        \begin{innerlist}
+            \item Lead Instructor: \href{http://www.gwu.edu/~condmat/CME/reeves.html}{Professor Mark Reeves}
+
+            \item Helped run 6~hour in-class guided laboratory and problem-solving session with freshman and sophomore students; developed course materials, and analyzed students.
+        \end{innerlist}~
+        \item Lead Lab Instructor for PHY-22: Introduction to Electricity and Magnetism (Calculus-based), Fall Semester 2008
+        \begin{innerlist}
+        \item Lead Instructor: \href{http://physics.columbian.gwu.edu/andrei-alexandru}{Professor Andrei Alexandru}
+            \item Ran 3~hour laboratory where freshman and sophomore undergraduate
+                students complete pedagogical experiments, and 2~hour recitation and problem solving session
+            \item Coordinated all evaluation (homework, exams, quizzes, etc)
+        \end{innerlist}~
+
+     \item Lab Instructor for PHY-12: Introduction to Electricity and Magnetism (Algebra-based), Fall Semester 2008
+        \begin{innerlist}
+	   \item Lead Instructor: \href{https://www.linkedin.com/pub/anna-micherdzinska/18/9a6/4a9}{Professor Anna Micherdzinska}
+            \item Ran 3~hour laboratory where freshman and sophomore undergraduate
+                students complete pedagogical experiments, and 2~hour recitation and problem solving session
+        \end{innerlist}~
+
+    \end{innerlist}
+\end{outerlist}
+
+\section{Service}
+Open source contributor to various projects \\
+Officer, United States Navy, since May 2003 \\
+Technical Supervisor, \href{http://www.hoofnhorn.org/}{Hoof'n'Horn Musical Theater Company}, 2000-2003
+
+\section{Technical Skills}
+%
+Broad experience with scientific and engineering frameworks, including development, use in parallel applications, and coordination with large databases
+
+\blankline
+
+Programming Skills: Scala, R, Python, Javascript, Perl, Java, C/C++, Pascal, FORTRAN, various SQLs, assorted frameworks and tools (version control systems, IDEs).  Web development using various frameworks and preprocessing languages.
+
+\blankline
+
+Experienced in carpentry, brazing, soldering, welding (stick and inert-gas), and bench-top machining.  Some experience with automated machining systems. Some experienced with Computer-Aided Design, Engineering, and Manufacturing.
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
