@@ -1,3 +1,6 @@
+
+*Below is my original intent query letter.  Full application available at [madeforuse.org/olin-letter](http://madeforuse.org/olin-letter/ "Took me long enough, huh?")*
+
 ##Re Me
 
 I am a post-doctoral researcher, dabbling in several fields (social science modeling, infectious disease ecology, and software engineering).  These projects are far afield from my doctoral work (physics, specifically [theoretical statistical mechanics](http://goo.gl/AYgXwH "Woohoo, still no citations!")), but I'm getting great mileage out of the physics toolbox (and the engineering one from work before graduate school).  I've done several talks and posters with various collaborators, and am now turning those into publications, most of which will include a software component for other researchers to use.
